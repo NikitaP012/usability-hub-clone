@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 @media screen and (max-width: 991px){
 
     h3{
@@ -57,8 +63,10 @@
 @media screen and (max-width: 767px) {
 
     
-    .primary-button{
+    .primary-button {
         width: 100%;
+        padding: 15px 20px;
+        font-size: 1.1rem; 
     }
 
     .header-section{
@@ -134,4 +142,64 @@
         width: 100%;
     }
     
+}
+
+@media screen and (max-width: 991px) {
+    .cta-section-container {
+        flex-direction: column;
+    }
+
+    .grid-layout {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cta-image-section {
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .update-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .update-info p {
+        font-size: 1rem;
+    }
+
+    .grid-layout {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .cta-section {
+        padding: 30px 10px;
+    }
+
+    .update-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .update-info p {
+        font-size: 0.9rem;
+    }
+
+    .grid-layout {
+        gap: 5px;
+    }
+
+    .primary-button, .secondary-button {
+        width: 100%; 
+        text-align: center;
+        justify-content: center;
+    
+    }
 }
